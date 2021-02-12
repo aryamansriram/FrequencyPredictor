@@ -20,7 +20,7 @@ This project aims to predict the fundamental frequency of a signal using Neural 
 
 ## Steps to run
 
-- Open your terminal in the root of your repository and run the data_creator.py file by running the command  `python data_creator.py` in your terminal.
+- Open your terminal in the root of your repository and run the data_creator.py file by running the command  `python scripts/data_creator.py` in your terminal.
 - This will create the data and store it in the data folder with the name `X.npy` and `y.npy` respectively.
-- Now run the command `python main.py` from the root of your repository in your terminal. 
+- Now run the command `python scripts/main.py` from the root of your repository in your terminal. 
 - The script will run kfold cross validation for 2 times (which can be modified by changing the n_splits variable in the code) and produce a plot for every fold. After this it will load the model which gave the lowest loss and make predictions on the test data using it. It then calculates the mse and r2 score metrics and prints them out as well.
